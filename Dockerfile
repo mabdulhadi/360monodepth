@@ -2,7 +2,8 @@
 # create docker container with image: docker run --name=mzy22_monodepth -e COLUMNS=300 --mount type=bind,source="$(pwd)",target=/monodepth_dev -it --gpus all mzy22/monodepth:v1.0
 
 # ubuntu 20.04/cuda
-FROM nvidia/cuda:11.4.2-devel-ubuntu20.04
+#FROM nvidia/cuda:11.4.2-devel-ubuntu20.04
+FROM nvidia/cuda:12.8.0-devel-ubuntu20.04
 # FROM alpine:3.4
 
 #-- setup building environment 
